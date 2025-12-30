@@ -1,8 +1,16 @@
 void main(){
 
-  C c = C();
+  // C c = C();
+  //
+  // c.display();
 
-  c.display();
+  Calculator calculator = Calculator();
+
+  print(  calculator.add(1, 10));
+  print(  calculator.sub(1, 10));
+  print(  calculator.mul(1, 10));
+
+
 
 
 
@@ -35,6 +43,24 @@ class C extends B{
     print("Class C");
     print(dream);
   }
+
+
+}
+
+class Calculator{
+
+  int add(int a, int b){
+    return a + b;
+  }
+
+  int sub(int a, int b){
+    return a - b;
+  }
+
+  int mul(int a, int b){
+    return a * b;
+  }
+
 
 
 }
